@@ -1,0 +1,13 @@
+
+  <button (click)="back()" [disabled]=message mat-raised-button color="primary">
+    <mat-icon>arrow_back</mat-icon>
+  </button>
+  <button (click)="forward()" [disabled]=messageForward mat-raised-button color="accent">
+    <mat-icon>arrow_forward</mat-icon>
+  </button>
+<div (click)="onclick($event)">
+  <h1
+  *ngFor="let item of points"
+  [ngStyle]="{'left': item.clientX + 'px','top': item.clientY + 'px'}">
+</h1>
+</div>

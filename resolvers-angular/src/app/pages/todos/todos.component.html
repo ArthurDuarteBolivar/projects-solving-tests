@@ -1,0 +1,6 @@
+<div *ngIf="todos.error">
+    <h1>Ocorreu um erro: {{todos.error}}</h1>
+</div>
+<ul *ngIf="todos.success">
+    <li *ngFor="let item of todos.success">{{item.title}}</li>
+</ul>
